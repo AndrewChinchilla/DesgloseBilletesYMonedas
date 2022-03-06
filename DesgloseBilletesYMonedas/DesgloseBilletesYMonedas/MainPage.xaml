@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesgloseBilletesYMonedas.MainPage">
+
+    <StackLayout>
+        <Label Text=""/>
+        <Frame BackgroundColor="OrangeRed" Padding="14" CornerRadius="150">
+            <Label Text="Bienvenido " HorizontalTextAlignment="Center" TextColor="White" FontSize="35"/>
+        </Frame>
+        <Label Text=""/>
+        <Frame BackgroundColor="White" Padding="06" CornerRadius="999">
+            <Label Text="DESGLOSE DE BILLETES Y MONEDAS" HorizontalTextAlignment="Center" TextColor="#000000" FontSize="18"/>
+        </Frame>
+        <Label Text=""/>
+        <Label Text="Acá puedes ingresar la cantidad que deseas desglosar: "
+               HorizontalTextAlignment="Center"  FontSize="18" Padding="60,10,60,20"/>
+
+        <Entry HorizontalTextAlignment="Center"
+               Placeholder="Ingrese su Cantidad:"
+               x:Name="Cantidad"
+               Keyboard="Numeric"/>
+        <Button Text= "- Desglosar -"
+                BackgroundColor="DarkRed"
+                CornerRadius="99" x:Name="BotonDesglose"
+                Clicked="Button_Clicked"/>
+        <Label Text=""/>
+        <Label Text="RESULTADOS:" HorizontalTextAlignment="Center" FontSize="16" TextColor="White"/>
+
+        <Frame CornerRadius="9">
+        <Label FontSize="14"
+               TextColor="Black"
+               BackgroundColor="SkyBlue" 
+               HorizontalTextAlignment="Center"
+               x:Name="Result"/>
+        </Frame>
+
+
+
+
+    </StackLayout>
+
+
+</ContentPage>
